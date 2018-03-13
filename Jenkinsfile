@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 node{
   stage('Build') {
     sh 'npm install'
