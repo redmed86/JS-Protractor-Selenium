@@ -2,10 +2,6 @@
 
 node('master'){
   def branch = "${env.BRANCH_NAME}"
-  withCredentials([usernamePassword(credentialsId: 'derek_sauce_key', passwordVariable: 'sauce_access_key', usernameVariable: 'sauce_username')]) {
-    env.SAUCE_USERNAME = sauce_username
-    env.SAUCE_ACCESS_KEY = sauce_access_key
-  }
 
   echo branch
 
@@ -18,6 +14,9 @@ node('master'){
   }
 
   stage('Test') {
-    sh 'npm test'
+    sauce('derek_sauce_key') {
+    // using sauce username & access key run test script
+      sh 'npm install'
+    }
   }
 }
