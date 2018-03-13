@@ -2,7 +2,15 @@
 
 node('master'){
   def branch = "${env.BRANCH_NAME}"
+  withCredentials([usernamePassword(credentialsId: 'derek_sauce', passwordVariable: 'sauce_access_key', usernameVariable: 'sauce_username')]) {
+    env.SAUCE_USERNAME = sauce_username
+    env.SAUCE_ACCESS_KEY = sauce_access_key
+  }
 
+  echo branch
+  echo ${env.SAUCE_USERNAME}
+  echo ${env.SAUCE_ACCESS_KEY}
+  
   stage('Checkout') {
     checkout scm
   }
