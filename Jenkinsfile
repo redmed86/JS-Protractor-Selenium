@@ -8,9 +8,9 @@ node('master'){
   }
 
   echo branch
-  echo ${env.SAUCE_USERNAME}
-  echo ${env.SAUCE_ACCESS_KEY}
-  
+  echo "${env.SAUCE_USERNAME}"
+  echo "${env.SAUCE_ACCESS_KEY}"
+
   stage('Checkout') {
     checkout scm
   }
