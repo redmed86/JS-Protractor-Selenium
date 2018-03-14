@@ -17,6 +17,7 @@ exports.config = {
 
     onPrepare: function () {
         var caps = browser.getCapabilities()
+        console.log(caps)
     },
 
     multiCapabilities: [{
