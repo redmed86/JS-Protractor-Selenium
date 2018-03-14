@@ -6,8 +6,6 @@ exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
 
-    caps = {};
-    caps['build'] = 'Derek Jenkins';
     // sauceAgent: sauceRestAgent,
 
     // webDriverProxy: 'http://<proxy>:<port>',
