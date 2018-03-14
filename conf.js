@@ -5,7 +5,7 @@
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    sauceBuild: "Derek Jenkins: " + process.env.BUILD_NUMBER,
+    sauceBuild: "sauce-protractor: " + process.env.BRANCH_NAME + "-" + process.env.BUILD_NUMBER,
     // sauceAgent: sauceRestAgent,
 
     // webDriverProxy: 'http://<proxy>:<port>',
