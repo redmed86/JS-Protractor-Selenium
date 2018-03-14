@@ -5,12 +5,13 @@
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
+    testobject_api_key: '59CE6AD64AE24CC5B1451EB76B833F2E',
     sauceBuild: "sauce-protractor: " + process.env.BRANCH_NAME + "-" + process.env.BUILD_NUMBER,
     // sauceAgent: sauceRestAgent,
 
     // webDriverProxy: 'http://<proxy>:<port>',
 
-    //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
+    // seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
     specs: ['specs/*spec.js'],
 
     // restartBrowserBetweenTests: true,
@@ -62,6 +63,18 @@ exports.config = {
         name: "chrome-tests",
         shardTestFiles: true,
         maxInstances: 25
+    }
+    //, {
+        // browserName: 'chrome',
+        // // version: 'latest',
+        // deviceName: 'Samsung Galaxy S6',
+        // platformVersion: '6.0.1',
+        // platformName: 'Android',
+        // testobject_api_key: '59CE6AD64AE24CC5B1451EB76B833F2E',
+        // seleniumAddress: 'https://us1.appium.testobject.com/wd/hub'
+
+        // shardTestFiles: true,
+        // maxInstances: 25
     }],
 
     onComplete: function () {
