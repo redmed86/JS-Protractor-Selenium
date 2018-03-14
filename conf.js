@@ -17,7 +17,7 @@ exports.config = {
 
     onPrepare: function () {
         var caps = browser.getCapabilities()
-        caps.build_ = "Derek Jenkins"
+        caps.build = "Derek Jenkins"
         console.log(caps)
     },
 
