@@ -17,8 +17,8 @@ exports.config = {
 
     onPrepare: function () {
         var caps = browser.getCapabilities()
-        caps.build = "Derek Jenkins"
-        console.log(caps)
+        // "Derek - SE Jenkins" = "Derek Jenkins"
+        // console.log(caps)
     },
 
     multiCapabilities: [{
@@ -28,7 +28,7 @@ exports.config = {
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        build: caps.build
+        build: "Derek - SE Jenkins"
     },{
         browserName: 'firefox',
         version: 'latest',
@@ -36,7 +36,7 @@ exports.config = {
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        build: caps.build
+        build: "Derek - SE Jenkins"
     }, {
         browserName: 'firefox',
         version: 'latest',
@@ -44,7 +44,7 @@ exports.config = {
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        build: caps.build
+        build: "Derek - SE Jenkins"
     }, {
         browserName: 'chrome',
         version: '41',
@@ -52,7 +52,7 @@ exports.config = {
         name: "chrome-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        build: caps.build
+        build: "Derek - SE Jenkins"
     }, {
         browserName: 'chrome',
         version: '41',
@@ -60,7 +60,7 @@ exports.config = {
         name: "chrome-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        build: caps.build
+        build: "Derek - SE Jenkins"
     }, {
         browserName: 'chrome',
         version: 'latest',
@@ -68,7 +68,7 @@ exports.config = {
         name: "chrome-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        build: caps.build
+        build: "Derek - SE Jenkins"
     }],
 
     onComplete: function () {
