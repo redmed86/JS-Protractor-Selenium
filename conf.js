@@ -27,42 +27,48 @@ exports.config = {
         platform: 'OS X 10.10',
         name: "firefox-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: caps.build
     },{
         browserName: 'firefox',
         version: 'latest',
         platform: 'Windows 7',
         name: "firefox-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: caps.build
     }, {
         browserName: 'firefox',
         version: 'latest',
         platform: 'Windows 10',
         name: "firefox-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: caps.build
     }, {
         browserName: 'chrome',
         version: '41',
         platform: 'Windows 7',
         name: "chrome-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: caps.build
     }, {
         browserName: 'chrome',
         version: '41',
         platform: 'OS X 10.10',
         name: "chrome-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: caps.build
     }, {
         browserName: 'chrome',
         version: 'latest',
         platform: 'Windows 7',
         name: "chrome-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: caps.build
     }],
 
     onComplete: function () {
