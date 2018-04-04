@@ -4,6 +4,7 @@
   "description": "Parallel tests protractor  =============",
   "main": "",
   "scripts": {
+    "pretest": "webdriver-manager update",
     "test": "./node_modules/.bin/protractor conf.js"
   },
   "devDependencies": {
